@@ -1,4 +1,4 @@
-scaletextjs
+Scale Text JS
 ===========
 
 Scale Text JS is a simple to use plugin for jQuery that allows you to scale text to the width AND height of the container component.
@@ -18,3 +18,8 @@ then simply scale the text with the following selector
 
     $(".mydiv").scaletext();
 
+
+Demo
+=====
+
+[To the see the demo in action click here](http://blissitec.com/demos/scaletext/examples/1.html)
