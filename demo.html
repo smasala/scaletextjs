@@ -1,0 +1,75 @@
+<html>
+
+<head>
+	<title>ScaleText JS Example 1</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="../scaletext.js"></script>
+	<script src="https://rawgit.com/smasala/scaletextjs/master/scaletext.js"></script>
+	
+	<style>
+		
+		html, body{
+			height:100%;
+		}
+	
+		.wrap{
+			width:1024px;
+			margin:0 auto;
+			padding-top:20px;
+			height:100%;
+		}
+		
+		.demo{
+			box-shadow:0px 0px 5px #3d3d3d;
+			margin:20 auto;
+		}
+	
+	</style>
+	
+	
+	<script>
+		$(document).ready(function(){
+			
+			var resize = function(){
+				var width = parseInt($("input[name=width]").val()) || 0;
+				var height = parseInt($("input[name=height]").val()) || 0;
+				$("div.demo").css({
+					width:width+"px",
+					height:height+"px"
+				});
+				$("div.demo").scaletext();
+			}
+			
+			resize();
+			
+			$("input[name=width], input[name=height]").on("keyup", function(){
+				resize();
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<div class="wrap">
+	
+		<h1>ScaleText JS</h1>
+	
+		<div class="dimensions">
+			<label for="width">Width</label><input name="width" value="400" />
+			<label for="height">Height</label><input name="height" value="300" />
+		</div>
+	
+		<div class="demo">
+			<span>ScaleText JS</span>
+		</div>
+		
+		<br><br>
+		<a href="http://www.blissitec.com">Created by Blissitec.com</a>
+
+	</div>
+	
+
+</body>
+
+</html>
