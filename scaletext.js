@@ -1,5 +1,7 @@
 /**
- * Steven Masala
+ * @author Steven Masala [me@smasala.com]
+ * @version 1.0.0
+ * @license MIT
  * 
  * jQuery Plugin
  * 
