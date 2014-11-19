@@ -19,7 +19,7 @@ then simply scale the text with the following selector
     $(".mydiv").scaletext();
 
 
-Demo
+[Demo]
 =====
 
-[To the see the demo in action click here](http://blissitec.com/demos/scaletext/examples/1.html)
+[Demo]:http://smasala.github.io/scaletextjs/demo.html
