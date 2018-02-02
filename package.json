@@ -1,0 +1,27 @@
+{
+  "name": "scaletextjs",
+  "version": "1.0.0",
+  "description": "Scale Text JS is a simple to use plugin for jQuery that allows you to scale text to the width AND height of the container component.",
+  "main": "scaletext.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smasala/scaletextjs.git"
+  },
+  "keywords": [
+    "scale",
+    "js",
+    "text",
+    "jquery",
+    "fit",
+    "autowidth"
+  ],
+  "author": "Steven Masala <me@smasala.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smasala/scaletextjs/issues"
+  },
+  "homepage": "https://github.com/smasala/scaletextjs#readme"
+}
