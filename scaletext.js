@@ -1,6 +1,6 @@
 /**
  * @author Steven Masala [me@smasala.com]
- * @version 1.0.0
+ * @version 1.0.1
  * @license MIT
  * 
  * jQuery Plugin
@@ -81,13 +81,12 @@ $.fn.scaletext = function(){
 		//TODO: better method than incrementing to 999?
 		for(fontSize; fontSize<999;fontSize++){
 			fontSize += increment;
-			$clone.css("font-size", fontSize + "px");
+			$clone.css("font-size", fontSize);
 			fit = testDimensions($clone, maxWidth, maxHeight);
 			
 			
 			if(previousFit && !fit){
-				fontSize = prevFontSize;
-				foundFont = true;
+				$t.css("font-size", prevFontSize);
 				break;
 			}
 			
@@ -100,15 +99,8 @@ $.fn.scaletext = function(){
 			prevFontSize = fontSize;
 		}
 		
-		$clone.remove();
+		$clone.remove();	
 		
-		if(foundFont){
-			var currentInline = $t.attr("style") || "";
-			currentInline = currentInline.replace(/font-size:([0-9]+)px;/g, "");
-			$t.attr("style", currentInline + "font-size:" + fontSize + "px;");
-		}
-		
-		
-	})
+	});
 	
 }
